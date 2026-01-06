@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="calc-container">
+
+  <!-- Display -->
+  <input type="text" id="display" readonly>
+
+  <!-- Calculator Buttons -->
+  <div class="grid">
+    <button class="op" onclick="backspace()">⌫</button>
+    <button class="op" onclick="append('Math.PI')">π</button>
+    <button class="op" onclick="append('Math.E')">e</button>
+    <button class="op" onclick="clearDisplay()">C</button>
+
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button>
+    <button class="op" onclick="append('/')">÷</button>
+
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button>
+    <button class="op" onclick="append('*')">×</button>
+
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button class="op" onclick="append('-')">−</button>
+
+    <button class="zero" onclick="append('0')">0</button>
+    <button onclick="append('.')">.</button>
+    <button class="equal" onclick="calculate()">=</button>
+  </div>
+
+  <!-- Scientific -->
+  <div class="scientific">
+    <button onclick="func('sqrt')">√</button>
+    <button onclick="func('pow')">x²</button>
+    <button onclick="func('sin')">sin</button>
+    <button onclick="func('cos')">cos</button>
+    <button onclick="func('tan')">tan</button>
+    <button onclick="func('log')">log</button>
+    <button onclick="func('ln')">ln</button>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider">String Operations</div>
+
+  <!-- String Section -->
+  <div class="string-box">
+    <input type="text" id="stringInput" placeholder="Enter text">
+
+    <div class="string-buttons">
+      <button onclick="reverseString()">Reverse</button>
+      <button onclick="toUpper()">Upper</button>
+      <button onclick="toLower()">Lower</button>
+      <button onclick="removeSpaces()">Remove Spaces</button>
+      <button onclick="wordCount()">Word Count</button>
+      <button onclick="charCount()">Char Count</button>
+      <button onclick="titleCase()">Title Case</button>
+      <button onclick="checkPalindrome()">Palindrome</button>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
