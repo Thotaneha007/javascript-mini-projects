@@ -1,0 +1,13 @@
+bulb image(on)
+https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png
+
+
+cat image(full)
+https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/cat-img.png
+
+
+//only chat eyes 
+https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png
+
+//off bulb 
+https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png
